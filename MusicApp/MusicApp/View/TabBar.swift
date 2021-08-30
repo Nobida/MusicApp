@@ -10,6 +10,13 @@ import SwiftUI
 struct TabBar: View {
     @State var playerIsHidden: Bool = true
     @State var isPlaying: Bool = true
+    
+    
+    init() {
+        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.06274509804, green: 0.06274509804, blue: 0.06274509804, alpha: 1)
+    }
+    
+    
     var body: some View {
         TabView {
             NavigationView {
@@ -20,7 +27,7 @@ struct TabBar: View {
                 }
             }
             NavigationView {
-                
+                SearchView(viewModel: SongListViewModel())
             }.tabItem {
                 VStack {
                     Image(systemName: "magnifyingglass")

@@ -29,8 +29,9 @@
 		3460957426D7DF85000255C1 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460957326D7DF85000255C1 /* TabBar.swift */; };
 		3499736826DF4E54002B68E4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3499736726DF4E54002B68E4 /* SDWebImageSwiftUI */; };
 		3499736A26DF56CB002B68E4 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499736926DF56CB002B68E4 /* SearchViewModel.swift */; };
-		3499736E26E22751002B68E4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499736D26E22751002B68E4 /* User.swift */; };
+		3499736E26E22751002B68E4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499736D26E22751002B68E4 /* Login.swift */; };
 		3499737026E2285C002B68E4 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3499736F26E2285C002B68E4 /* UserViewModel.swift */; };
+		34B0DAC026E2F571001AF7CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0DABF26E2F571001AF7CA /* LoginViewModel.swift */; };
 		EC9E74EAC4A74FADD2D3B2A7 /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829CA21D75A6B7FD674FFCF7 /* Pods_MusicApp.framework */; };
 		F80DF3B0BC0772F4927B3ED1 /* Pods_MusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55D5EC21DEBA2454DBA88F8 /* Pods_MusicAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -82,8 +83,9 @@
 		3460956E26D7DF33000255C1 /* MusicApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicApp.swift; sourceTree = "<group>"; };
 		3460957326D7DF85000255C1 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3499736926DF56CB002B68E4 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
-		3499736D26E22751002B68E4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3499736D26E22751002B68E4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3499736F26E2285C002B68E4 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		34B0DABF26E2F571001AF7CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		601D3DA2139A957C512E3432 /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
 		829CA21D75A6B7FD674FFCF7 /* Pods_MusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55D5EC21DEBA2454DBA88F8 /* Pods_MusicAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				3404EC9226DCB3F7003F0254 /* HomeViewModel */,
 				3499736926DF56CB002B68E4 /* SearchViewModel.swift */,
 				3499736F26E2285C002B68E4 /* UserViewModel.swift */,
+				34B0DABF26E2F571001AF7CA /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -240,7 +243,7 @@
 				3404EC8626DC9D76003F0254 /* Home */,
 				3404EC7226DC9563003F0254 /* Search */,
 				3460957326D7DF85000255C1 /* TabBar.swift */,
-				3499736D26E22751002B68E4 /* User.swift */,
+				3499736D26E22751002B68E4 /* Login.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,10 +527,11 @@
 				3404EC7826DC96D5003F0254 /* EmptyStateView.swift in Sources */,
 				3460957426D7DF85000255C1 /* TabBar.swift in Sources */,
 				3404EC8C26DCA7A3003F0254 /* RecommendSong.swift in Sources */,
-				3499736E26E22751002B68E4 /* User.swift in Sources */,
+				3499736E26E22751002B68E4 /* Login.swift in Sources */,
 				3404EC8A26DCA797003F0254 /* RecentSong.swift in Sources */,
 				3404EC7126DC9539003F0254 /* SearchView.swift in Sources */,
 				3404EC7A26DC976F003F0254 /* SearchSongView.swift in Sources */,
+				34B0DAC026E2F571001AF7CA /* LoginViewModel.swift in Sources */,
 				3404EC8826DC9E8A003F0254 /* Home.swift in Sources */,
 				3404EC8E26DCA7AF003F0254 /* BestOfSection.swift in Sources */,
 				3404EC9526DCB470003F0254 /* RecentSongViewModel.swift in Sources */,

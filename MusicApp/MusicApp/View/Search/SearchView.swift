@@ -123,13 +123,14 @@ struct SearchView: View {
                         Image(systemName: "magnifyingglass")
                             .font(.title2)
                             .foregroundColor(.gray)
-                        TextField("Search", text: $searchData.search)
+                        TextField("Type a song, artist, or album name...", text: $searchData.search)
                     })
 
                 }.padding(.horizontal)
+                
                 .padding(.top,10)
                 if searchData.songs.isEmpty {
-                    Text("empty")
+                    EmptyStateView()
                     
                     
                 } else {

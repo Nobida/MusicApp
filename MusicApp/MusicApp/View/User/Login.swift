@@ -14,6 +14,7 @@ struct Login : View {
 
 
     @StateObject var loginViewModel = LoginViewModel()
+    @Binding var show : Bool
 
 
     
@@ -68,8 +69,6 @@ struct Login : View {
                     
                     Button(action: {
                         //loginViewModel.show.toggle()
-                        
-                        
                     }) {
                         
                         Text("Forget password")
@@ -112,8 +111,4 @@ struct Login : View {
 }
 
 
-struct User_Previews: PreviewProvider {
-    static var previews: some View {
-        Login()
-    }
-}
+

@@ -12,11 +12,11 @@
 		3404EC7826DC96D5003F0254 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC7726DC96D5003F0254 /* EmptyStateView.swift */; };
 		3404EC7C26DC97AC003F0254 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC7B26DC97AC003F0254 /* ArtworkView.swift */; };
 		3404EC8826DC9E8A003F0254 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC8726DC9E8A003F0254 /* Home.swift */; };
-		3404EC8A26DCA797003F0254 /* RecentSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC8926DCA797003F0254 /* RecentSong.swift */; };
+		3404EC8A26DCA797003F0254 /* LikeSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC8926DCA797003F0254 /* LikeSong.swift */; };
 		3404EC8C26DCA7A3003F0254 /* RecommendSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC8B26DCA7A3003F0254 /* RecommendSong.swift */; };
 		3404EC8E26DCA7AF003F0254 /* BestOfSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC8D26DCA7AF003F0254 /* BestOfSection.swift */; };
 		3404EC9126DCA87A003F0254 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC9026DCA87A003F0254 /* Artist.swift */; };
-		3404EC9526DCB470003F0254 /* RecentSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC9426DCB470003F0254 /* RecentSongViewModel.swift */; };
+		3404EC9526DCB470003F0254 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404EC9426DCB470003F0254 /* HomeViewModel.swift */; };
 		3404EC9926DDF24D003F0254 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3404EC9826DDF24D003F0254 /* GoogleService-Info.plist */; };
 		3460954626D7DEFB000255C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460954526D7DEFB000255C1 /* ContentView.swift */; };
 		3460954826D7DEFD000255C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3460954726D7DEFD000255C1 /* Assets.xcassets */; };
@@ -32,6 +32,8 @@
 		34B0DAC026E2F571001AF7CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0DABF26E2F571001AF7CA /* LoginViewModel.swift */; };
 		34B0DAC226E30943001AF7CA /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0DAC126E30943001AF7CA /* SignUp.swift */; };
 		34B0DAC426E3097B001AF7CA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0DAC326E3097B001AF7CA /* SignUpViewModel.swift */; };
+		34B0DAC626E31490001AF7CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0DAC526E31490001AF7CA /* User.swift */; };
+		34B0DAC926E345E2001AF7CA /* RecentSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0DAC826E345E2001AF7CA /* RecentSong.swift */; };
 		EC9E74EAC4A74FADD2D3B2A7 /* Pods_MusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 829CA21D75A6B7FD674FFCF7 /* Pods_MusicApp.framework */; };
 		F80DF3B0BC0772F4927B3ED1 /* Pods_MusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A55D5EC21DEBA2454DBA88F8 /* Pods_MusicAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,11 +63,11 @@
 		3404EC7726DC96D5003F0254 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		3404EC7B26DC97AC003F0254 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
 		3404EC8726DC9E8A003F0254 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		3404EC8926DCA797003F0254 /* RecentSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSong.swift; sourceTree = "<group>"; };
+		3404EC8926DCA797003F0254 /* LikeSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeSong.swift; sourceTree = "<group>"; };
 		3404EC8B26DCA7A3003F0254 /* RecommendSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendSong.swift; sourceTree = "<group>"; };
 		3404EC8D26DCA7AF003F0254 /* BestOfSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestOfSection.swift; sourceTree = "<group>"; };
 		3404EC9026DCA87A003F0254 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
-		3404EC9426DCB470003F0254 /* RecentSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSongViewModel.swift; sourceTree = "<group>"; };
+		3404EC9426DCB470003F0254 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3404EC9826DDF24D003F0254 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3460954026D7DEFB000255C1 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3460954526D7DEFB000255C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,8 @@
 		34B0DABF26E2F571001AF7CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		34B0DAC126E30943001AF7CA /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		34B0DAC326E3097B001AF7CA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		34B0DAC526E31490001AF7CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		34B0DAC826E345E2001AF7CA /* RecentSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSong.swift; sourceTree = "<group>"; };
 		601D3DA2139A957C512E3432 /* Pods-MusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicApp.release.xcconfig"; path = "Target Support Files/Pods-MusicApp/Pods-MusicApp.release.xcconfig"; sourceTree = "<group>"; };
 		829CA21D75A6B7FD674FFCF7 /* Pods_MusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55D5EC21DEBA2454DBA88F8 /* Pods_MusicAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,9 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				3404EC8726DC9E8A003F0254 /* Home.swift */,
-				3404EC8926DCA797003F0254 /* RecentSong.swift */,
+				3404EC8926DCA797003F0254 /* LikeSong.swift */,
 				3404EC8B26DCA7A3003F0254 /* RecommendSong.swift */,
 				3404EC8D26DCA7AF003F0254 /* BestOfSection.swift */,
+				34B0DAC826E345E2001AF7CA /* RecentSong.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -167,7 +172,7 @@
 		3404EC9226DCB3F7003F0254 /* HomeViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				3404EC9426DCB470003F0254 /* RecentSongViewModel.swift */,
+				3404EC9426DCB470003F0254 /* HomeViewModel.swift */,
 			);
 			path = HomeViewModel;
 			sourceTree = "<group>";
@@ -239,11 +244,10 @@
 		3460957026D7DF6D000255C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34B0DAC726E345AF001AF7CA /* User */,
 				3404EC8626DC9D76003F0254 /* Home */,
 				3404EC7226DC9563003F0254 /* Search */,
 				3460957326D7DF85000255C1 /* TabBar.swift */,
-				3499736D26E22751002B68E4 /* Login.swift */,
-				34B0DAC126E30943001AF7CA /* SignUp.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +258,16 @@
 				3404EC8F26DCA806003F0254 /* Home */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		34B0DAC726E345AF001AF7CA /* User */ = {
+			isa = PBXGroup;
+			children = (
+				34B0DAC126E30943001AF7CA /* SignUp.swift */,
+				34B0DAC526E31490001AF7CA /* User.swift */,
+				3499736D26E22751002B68E4 /* Login.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		98589EC4315656A5C5183325 /* Pods */ = {
@@ -529,18 +543,20 @@
 				3460957426D7DF85000255C1 /* TabBar.swift in Sources */,
 				3404EC8C26DCA7A3003F0254 /* RecommendSong.swift in Sources */,
 				3499736E26E22751002B68E4 /* Login.swift in Sources */,
-				3404EC8A26DCA797003F0254 /* RecentSong.swift in Sources */,
+				3404EC8A26DCA797003F0254 /* LikeSong.swift in Sources */,
 				3404EC7126DC9539003F0254 /* SearchView.swift in Sources */,
 				34B0DAC026E2F571001AF7CA /* LoginViewModel.swift in Sources */,
 				3404EC8826DC9E8A003F0254 /* Home.swift in Sources */,
 				3404EC8E26DCA7AF003F0254 /* BestOfSection.swift in Sources */,
-				3404EC9526DCB470003F0254 /* RecentSongViewModel.swift in Sources */,
+				34B0DAC926E345E2001AF7CA /* RecentSong.swift in Sources */,
+				3404EC9526DCB470003F0254 /* HomeViewModel.swift in Sources */,
 				3460954626D7DEFB000255C1 /* ContentView.swift in Sources */,
 				3404EC9126DCA87A003F0254 /* Artist.swift in Sources */,
 				3499737026E2285C002B68E4 /* UserViewModel.swift in Sources */,
 				34B0DAC226E30943001AF7CA /* SignUp.swift in Sources */,
 				3404EC7C26DC97AC003F0254 /* ArtworkView.swift in Sources */,
 				3460956F26D7DF33000255C1 /* MusicApp.swift in Sources */,
+				34B0DAC626E31490001AF7CA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

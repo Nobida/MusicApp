@@ -10,12 +10,13 @@ import SDWebImageSwiftUI
 
 struct RecommendSong: View {
     var columns = Array(repeating: GridItem(.flexible(), spacing:20), count:2)
-    @StateObject var RecentSongModel = RecentViewModel()
+    
+    @StateObject var RecentSongModel = HomeViewModel()
     
     var body: some View {
         VStack(spacing: 12) {
             HStack {
-                Text("Recommend Song")
+                Text("おすすめステーション")
                     .font(.title2)
                     .bold()
                     .foregroundColor(.white)

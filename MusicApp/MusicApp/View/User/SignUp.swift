@@ -10,6 +10,7 @@ import SwiftUI
 struct SignUp : View {
     
     @StateObject var signUpViewModel = SignUpViewModel()
+    @Binding var show : Bool
     
     var body: some View{
         

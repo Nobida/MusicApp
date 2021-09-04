@@ -21,6 +21,7 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, 16)
                 RecentSong()
+                LikeSong()
                 RecommendSong()
 
             }.padding(.bottom, 50)

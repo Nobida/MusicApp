@@ -20,6 +20,7 @@ struct TabBar: View {
     var body: some View {
         TabView {
             NavigationView {
+                HomeView()
             }.tabItem {
                 VStack {
                     Image(systemName: "house")
@@ -27,7 +28,7 @@ struct TabBar: View {
                 }
             }
             NavigationView {
-                SearchView(viewModel: SongListViewModel())
+                SearchView(searchData: SearchViewModel())
             }.tabItem {
                 VStack {
                     Image(systemName: "magnifyingglass")

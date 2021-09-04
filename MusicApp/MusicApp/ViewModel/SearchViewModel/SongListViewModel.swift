@@ -13,6 +13,7 @@ import SwiftUI
 
 
 class SongListViewModel: ObservableObject {
+    
     @Published var searchTerm: String = ""
     @Published public private(set) var songs: [SongViewModel] = []
     
@@ -30,7 +31,6 @@ class SongListViewModel: ObservableObject {
     private func loadSongs(searchTerm: String) {
         songs.removeAll()
         artworkLoader.reset()
-        
         dataModel.loadSongs(searchTerm: searchTerm) { songs in
             songs.forEach { self.appendSong(song: $0) }
         }

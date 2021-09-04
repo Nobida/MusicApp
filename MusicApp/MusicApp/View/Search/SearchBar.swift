@@ -10,7 +10,10 @@ import SwiftUI
 import StoreKit
 import MediaPlayer
 
-struct SearchBar: UIViewRepresentable {
+
+
+
+struct SearchBar2: UIViewRepresentable {
     typealias UIViewType = UISearchBar
     // ^ UIVRep has to conform
     

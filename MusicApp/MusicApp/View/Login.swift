@@ -49,6 +49,7 @@ struct Login : View {
                     }
                     
                     Button(action: {
+                        loginViewModel.verify()
                         
                     }) {
                         
@@ -66,6 +67,7 @@ struct Login : View {
                     Spacer()
                     
                     Button(action: {
+                        //loginViewModel.show.toggle()
                         
                         
                     }) {
@@ -76,17 +78,20 @@ struct Login : View {
                     }
                     
                     Button(action: {
+                        loginViewModel.verify()
+                        print("asdasd")
                         
                         
                     }) {
                         Text("Log in")
-                            .foregroundColor(.white)
+                            .foregroundColor(.black)
                             .padding(.vertical)
                             .frame(width: UIScreen.main.bounds.width - 50)
                     }
                     .background(Color("Color"))
                     .cornerRadius(10)
                     .padding(.top, 25)
+                    
                 }
                 .padding(.horizontal, 25)
             }

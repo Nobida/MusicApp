@@ -15,6 +15,7 @@ class LoginViewModel: NSObject, ObservableObject {
     //ItemData...
     @Published var email = ""
     @Published var visible = false
+    @Published var show = false
     @Published var color = Color.black.opacity(0.3)
     @Published var pass = ""
     @Published var alert = false
@@ -24,10 +25,12 @@ class LoginViewModel: NSObject, ObservableObject {
     // verify the user information
     func verify(){
         if self.email != "" && self.pass != ""{
+            
             Auth.auth().signIn(withEmail: self.email, password: self.pass) { (res, err) in
                 if err != nil{
                     self.error = err!.localizedDescription
                     self.alert.toggle()
+                    print(self.error)
                     return
                 }
                 print("success")
@@ -36,6 +39,7 @@ class LoginViewModel: NSObject, ObservableObject {
             }
         }
         else{
+            print("assssss")
             self.error = "Please fill all the contents properly"
             self.alert.toggle()
         }

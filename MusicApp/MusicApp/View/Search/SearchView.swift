@@ -18,7 +18,7 @@ struct SongView: View {
 
     func sendSearchItem() {
         let db = Firestore.firestore()
-        db.collection("Search").document(Auth.auth().currentUser!.uid).setData([
+        db.collection("Search").document(Auth.auth().currentUser!.uid).collection("items").addDocument(data: [
             "artistName": song.artistName,
             "trackName": song.trackName,
         
@@ -144,7 +144,7 @@ struct SearchView: View {
             
             .navigationBarTitle("Music Search")
             .onAppear(perform: {
-                searchData.login()
+                //searchData.login()
            })
     }
     

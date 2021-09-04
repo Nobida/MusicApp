@@ -12,9 +12,7 @@ struct TabBar: View {
     @State var isPlaying: Bool = true
     
     
-    init() {
-        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.06274509804, green: 0.06274509804, blue: 0.06274509804, alpha: 1)
-    }
+
     
     
     var body: some View {
@@ -44,7 +42,7 @@ struct TabBar: View {
                 }
             }
             NavigationView {
-                
+                SignUp()
             }.tabItem {
                 VStack {
                     Image(systemName: "line.horizontal.3.decrease.circle.fill")
@@ -53,7 +51,7 @@ struct TabBar: View {
             }
             .accentColor(.white)
         }
-        .preferredColorScheme(.dark)
+
         
     }
 }

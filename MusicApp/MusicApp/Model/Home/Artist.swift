@@ -13,6 +13,8 @@ struct Artist: Identifiable {
     var imageName: String
     var name: String
     
+
+    
 }
 
 

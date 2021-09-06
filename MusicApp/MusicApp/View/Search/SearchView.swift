@@ -10,18 +10,20 @@ import StoreKit
 import MediaPlayer
 import AVKit
 import Firebase
+import SDWebImageSwiftUI
 
 struct SongView: View {
+    
     var song: Song
     @State var isPlaying: Bool? = false
     
-
     func sendSearchItem() {
         let db = Firestore.firestore()
-        db.collection("Search").document(Auth.auth().currentUser!.uid).collection("items").addDocument(data: [
+        db.collection("Replay").document(Auth.auth().currentUser!.uid).collection("items").addDocument(data: [
             "artistName": song.artistName,
             "trackName": song.trackName,
-        
+            "artworkUrl": song.artworkUrl,
+
         ]) {
             (err) in
             if err != nil {
@@ -49,10 +51,9 @@ struct SongView: View {
     
     //send searchItem
 
-    
-    
     var body: some View {
         HStack {
+            WebImage(url: URL(string: song.artworkUrl))
             VStack(alignment: .leading) {
                 Text(song.trackName)
                 Text(song.artistName)

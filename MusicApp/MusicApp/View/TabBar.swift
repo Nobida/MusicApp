@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct TabBar: View {
+    
     @State var playerIsHidden: Bool = true
     @State var isPlaying: Bool = true
+    @StateObject var homeModel = HomeViewModel()
     
     
     init() {
@@ -22,7 +24,10 @@ struct TabBar: View {
             TabView {
                 ZStack(alignment: .bottom) {
                     HomeView()
-
+                    NowPlayingView(isPlaying: $isPlaying)
+                        .onTapGesture {
+                            playerIsHidden.toggle()
+                        }
                 }.tabItem {
                     VStack {
                         Image(systemName: "house")
@@ -53,10 +58,16 @@ struct TabBar: View {
                         Text("Premium")
                     }
                 }
-                .accentColor(.white)
+                //.accentColor(.white)
+                //MusicPlayer(isHidden: $playerIsHidden, isPlaying: $isPlaying)
             }
-            .preferredColorScheme(.dark)
-        }
+            .accentColor(.white)
+            MusicPlayer(isHidden: $playerIsHidden, isPlaying: $isPlaying)
+        }.preferredColorScheme(.dark)
+        .onAppear(perform: {
+            homeModel.fetchRecent()
+       })
+
     }
     
 }

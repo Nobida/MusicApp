@@ -15,6 +15,7 @@ class SongViewModel: Identifiable, ObservableObject {
     let trackName: String
     let artistName: String
     let previewUrl: String
+    
 
     init(song: Song) {
         self.id = song.id
@@ -39,6 +40,7 @@ struct Song: Identifiable,Decodable {
     let artistName: String
     let artworkUrl: String
     let previewUrl: String
+    
 
     
     enum CodingKeys: String, CodingKey {

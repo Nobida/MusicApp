@@ -16,6 +16,8 @@ class HomeViewModel: NSObject, ObservableObject {
     @Published var items: [Artist] = []
     @Published var recommendItems: [Artist] = []
     @Published var recentItems: [Artist] = []
+    @Published var latestItem = Artist(id: "", imageName: "", name: "")
+
     
     // anynomus login For Reading Database
     func login() {
@@ -57,15 +59,25 @@ class HomeViewModel: NSObject, ObservableObject {
     // Fetching Recent Data...
     func fetchRecent() {
         let db = Firestore.firestore()
-        db.collection("Recent").getDocuments {(snap, err) in
+        db.collection("Replay").document(Auth.auth().currentUser!.uid).collection("items").limit(to: 6).getDocuments{(snap, err) in
             guard let itemData = snap else { return }
             self.recentItems = itemData.documents.compactMap({
                 (doc) -> Artist? in
                 let id = doc.documentID
-                let artist = doc.get("artist") as! String
-                let image = doc.get("image") as! String
+                let artist = doc.get("artistName") as! String
+                let image = doc.get("artworkUrl") as! String
                 return Artist(id: id, imageName: image, name: artist)
             })
+            self.latestItem = self.recentItems[0]
+            print(self.latestItem)
         }
     }
+    
+    // Fetching Latest Data...
+    
+    
+    
+    
+    
+
 }

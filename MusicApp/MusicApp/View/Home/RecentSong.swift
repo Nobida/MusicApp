@@ -9,7 +9,9 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct RecentSong: View {
-    @StateObject var RecentSongModel = HomeViewModel()
+    
+    @EnvironmentObject var homeView : HomeViewModel
+
     var gridLayout = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
@@ -22,12 +24,14 @@ struct RecentSong: View {
                 Spacer()
             }.padding(.leading)
             LazyVGrid(columns: gridLayout, spacing: 8) {
-                ForEach(RecentSongModel.recentItems) { item in
+                ForEach(homeView.recentItems) { item in
                     HStack {
-                        WebImage(url: URL(string: item.imageName))
+                        
+                        WebImage(url: URL(string: item.artworkUrl))
                             .resizable()
                             .frame(width: 60, height: 60)
-                        Text(item.name)
+                        
+                        Text(item.trackName)
                             .font(.footnote)
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -36,21 +40,18 @@ struct RecentSong: View {
                     .padding(.trailing)
                     .background(Color.white.opacity(0.085))
                     .cornerRadius(8)
+                    .onTapGesture {
+                        homeView.touchNowPlaying(item: item)
+                    }
                 }
             }
             .padding(.horizontal)
-
         }
         .padding(.vertical)
         .onAppear(perform: {
-           RecentSongModel.login()
+           homeView.login()
        })
         
     }
 }
 
-struct RecentSong_Previews: PreviewProvider {
-    static var previews: some View {
-        RecentSong()
-    }
-}

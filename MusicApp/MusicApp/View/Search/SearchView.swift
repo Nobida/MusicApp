@@ -23,7 +23,8 @@ struct SongView: View {
             "artistName": song.artistName,
             "trackName": song.trackName,
             "artworkUrl": song.artworkUrl,
-
+            "previewUrl": song.previewUrl,
+            "isLike": false,
         ]) {
             (err) in
             if err != nil {
@@ -132,12 +133,9 @@ struct SearchView: View {
                 .padding(.top,10)
                 if searchData.songs.isEmpty {
                     EmptyStateView()
-                    
-                    
                 } else {
                     List(searchData.songs) { song in
                         SongView(song: song)
-                        
                     }
                     .listStyle(PlainListStyle())
 

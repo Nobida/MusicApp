@@ -11,7 +11,8 @@ import SDWebImageSwiftUI
 struct LikeSong: View {
     
     @StateObject var RecentSongModel = HomeViewModel()
-
+    
+    
     var body: some View {
         VStack {
             HStack {
@@ -21,16 +22,15 @@ struct LikeSong: View {
                     .foregroundColor(.white)
                 Spacer()
             }
-            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 16) {
-                    ForEach(RecentSongModel.items) { item in
+                    ForEach(RecentSongModel.recommendItems) { item in
                         VStack(alignment: .leading) {
-                            WebImage(url: URL(string: item.imageName))
+                            WebImage(url: URL(string: item.artworkUrl))
                                 .resizable()
                                 .frame(width: 130, height: 130)
                                 .cornerRadius(3)
-                            Text(item.name)
+                            Text(item.artistName)
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                                 .foregroundColor(.white)

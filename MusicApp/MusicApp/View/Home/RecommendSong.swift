@@ -28,7 +28,7 @@ struct RecommendSong: View {
                 ForEach(RecentSongModel.items){
                     item in
                     
-                    WebImage(url: URL(string: item.imageName))
+                    WebImage(url: URL(string: item.artworkUrl))
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: (UIScreen.main.bounds.width - 50) / 2, height: 180)

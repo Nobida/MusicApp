@@ -12,8 +12,16 @@ struct Artist: Identifiable {
     var id: String
     var imageName: String
     var name: String
-    
+}
 
+struct SongItem: Identifiable {
+    
+    var id: String
+    var trackName: String
+    var artistName: String
+    var artworkUrl: String
+    var previewUrl: String
+    var isLike: Bool = false
     
 }
 

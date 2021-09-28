@@ -31,27 +31,5 @@ class MusicPlayerViewModel: NSObject, ObservableObject {
     @Published var finish = false
     @Published var del = AVdelegate()
     
-    func ChangeSongs(){
-        
-        let url = Bundle.main.path(forResource: self.songs[self.current], ofType: "mp3")
-        self.player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: url!))
-        self.player.delegate = self.del
-        
-        self.data = .init(count: 0)
-        
-        self.title = ""
-        
-        self.player.prepareToPlay()
-        self.getData()
-        
-        self.playing = true
-        
-        self.finish = false
-        
-        self.width = 0
-        
-        self.player.play()
-        
 
-    }
 }

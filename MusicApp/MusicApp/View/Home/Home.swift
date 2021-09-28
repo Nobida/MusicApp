@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @EnvironmentObject var homeModel: HomeViewModel
+    
     var body: some View {
         
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
-                HStack {
-                    Spacer()
-                    Image(systemName: "gearshape")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                }
-                .padding(.horizontal, 16)
                 RecentSong()
                 LikeSong()
                 RecommendSong()
@@ -33,5 +28,7 @@ struct HomeView: View {
         )
     }
 }
+
+
 
 

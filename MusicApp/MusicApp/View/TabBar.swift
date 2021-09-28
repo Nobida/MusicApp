@@ -20,13 +20,14 @@ struct TabBar: View {
     
     
     var body: some View {
+
         ZStack{
             TabView {
                 ZStack(alignment: .bottom) {
                     HomeView()
-                    NowPlayingView(isPlaying: $isPlaying)
+                    NowPlayingView()
                         .onTapGesture {
-                            playerIsHidden.toggle()
+                            homeModel.playerIsHidden.toggle()
                         }
                 }.tabItem {
                     VStack {
@@ -51,19 +52,19 @@ struct TabBar: View {
                     }
                 }
                 NavigationView {
-                    Text("Hello")
+                    //Login(, show: <#Binding<Bool>#>)
                 }.tabItem {
                     VStack {
                         Image(systemName: "line.horizontal.3.decrease.circle.fill")
                         Text("Premium")
                     }
                 }
-                //.accentColor(.white)
-                //MusicPlayer(isHidden: $playerIsHidden, isPlaying: $isPlaying)
+
             }
             .accentColor(.white)
-            MusicPlayer(isHidden: $playerIsHidden, isPlaying: $isPlaying)
+            MusicPlayer()
         }.preferredColorScheme(.dark)
+        .environmentObject(homeModel)
         .onAppear(perform: {
             homeModel.fetchRecent()
        })

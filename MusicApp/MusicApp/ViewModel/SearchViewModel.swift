@@ -63,7 +63,6 @@ class SearchViewModel: NSObject, ObservableObject {
     
     func fetch() {
         guard let url = self.buildUrl(forTerm: search) else {
-            
             return
         }
         let task = URLSession.shared.dataTask(with: url) {

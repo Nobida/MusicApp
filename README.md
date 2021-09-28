@@ -5,7 +5,8 @@
 ![image](https://github.com/Nobida/MusicApp/blob/main/MusicApp/sample.gif)
 
 ### Structure
-.
+
+```js
 ├── Assets.xcassets
 │   ├── AccentColor.colorset
 │   │   └── Contents.json
@@ -53,4 +54,4 @@
     ├── SearchViewModel.swift
     ├── SignUpViewModel.swift
     └── UserViewModel.swift
-.
+```
